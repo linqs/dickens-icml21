@@ -1,0 +1,29 @@
+predicates:
+   IsDayOfWeek/2: closed
+   IsHour/2: closed
+   Demand/2: open
+   IsWeekend/1: closed
+   Station/1: closed
+   Target/2: closed
+   Nearby/2: closed
+   Commute/2: closed
+   Raining/2: closed
+   ARIMA/1: closed
+
+observations:
+   IsDayOfWeek: ../data/bikeshare/bikeshare_time_series/0/eval/10/IsDayOfWeek_obs.txt
+   IsHour: ../data/bikeshare/bikeshare_time_series/0/eval/10/IsHour_obs.txt
+   Target: ../data/bikeshare/bikeshare_time_series/0/eval/10/Target_obs.txt
+   Demand: ../data/bikeshare/bikeshare_time_series/0/eval/10/Demand_obs.txt
+   IsWeekend: ../data/bikeshare/bikeshare_time_series/0/eval/10/IsWeekend_obs.txt
+   Station: ../data/bikeshare/bikeshare_time_series/0/eval/10/Station_obs.txt
+   Nearby: ../data/bikeshare/bikeshare_time_series/0/eval/10/Nearby_obs.txt
+   Commute: ../data/bikeshare/bikeshare_time_series/0/eval/10/Commute_obs.txt
+   Raining: ../data/bikeshare/bikeshare_time_series/0/eval/10/Raining_obs.txt
+   ARIMA: ../data/bikeshare/bikeshare_time_series/0/eval/10/ARIMA_obs.txt
+
+targets:
+   Demand: ../data/bikeshare/bikeshare_time_series/0/eval/10/Demand_target.txt
+
+truth:
+   Demand: ../data/bikeshare/bikeshare_time_series/0/eval/10/Demand_truth.txt

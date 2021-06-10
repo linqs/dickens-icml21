@@ -1,0 +1,31 @@
+predicates:
+    target/2: closed
+    sim_content_items/2: closed
+    sim_items/2: closed
+    sim_users/2: closed
+    avg_item_rating/1: closed
+    avg_user_rating/1: closed
+    rated/2: closed
+    rating/2: open
+    nmf_rating/2: closed
+
+observations:
+    target: ../data/movielens-1m/movielens-1m_online/00/eval/00/target_obs.txt
+    rated: ../data/movielens-1m/movielens-1m_online/00/eval/00/rated_obs.txt
+
+    sim_content_items: ../data/movielens-1m/movielens-1m_online/00/eval/00/sim_content_items_obs.txt
+    sim_items: ../data/movielens-1m/movielens-1m_online/00/eval/00/sim_items_obs.txt
+    sim_users: ../data/movielens-1m/movielens-1m_online/00/eval/00/sim_users_obs.txt
+
+    avg_item_rating: ../data/movielens-1m/movielens-1m_online/00/eval/00/avg_item_rating_obs.txt
+    avg_user_rating: ../data/movielens-1m/movielens-1m_online/00/eval/00/avg_user_rating_obs.txt
+
+    nmf_rating: ../data/movielens-1m/movielens-1m_online/00/eval/00/nmf_rating_obs.txt
+
+    rating: ../data/movielens-1m/movielens-1m_online/00/eval/00/rating_obs.txt
+
+targets:
+    rating: ../data/movielens-1m/movielens-1m_online/00/eval/00/rating_target.txt
+
+truth:
+    rating: ../data/movielens-1m/movielens-1m_online/00/eval/00/rating_truth.txt

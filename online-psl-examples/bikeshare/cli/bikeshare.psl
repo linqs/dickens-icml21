@@ -1,0 +1,10 @@
+1: Demand(S, T1) & IsHour(T1, H) & IsHour(T2, H) & IsDayOfWeek(T1, D) & IsDayOfWeek(T2, D) & Target(S, T1) & Target(S, T2) -> Demand(S, T2) ^2
+1: !Demand(S, T1) & IsHour(T1, H) & IsHour(T2, H) & IsDayOfWeek(T1, D) & IsDayOfWeek(T2, D) & Target(S, T1) & Target(S, T2) -> !Demand(S, T2) ^2
+1: Nearby(S1, S2) & Demand(S1, T) -> Demand(S2, T) ^2
+1: (S1 != S2) & Commute(S1, S2) & Demand(S1, T) -> !Demand(S2, T) ^2
+1: ARIMA(T) & Station(S) -> Demand(S, T) ^2
+1: Demand(S, T) -> ARIMA(T) ^2
+1: Raining(S, T) -> !Demand(S, T) ^2
+1: Demand(S, T) -> !Raining(S, T) ^2
+// Negative prior.
+0.1 : Target(S, T) >> !Demand(S, T)^2
